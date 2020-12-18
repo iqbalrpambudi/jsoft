@@ -1,0 +1,326 @@
+/* import fonts from fonts.css file
+@import url(../style/fonts.css)
+
+/* css variables
+@import url(../style/_variables.css)
+
+/* import global styling
+@import url(../style/_global.css)
+
+
+.list-group-item.active
+  z-index: 2
+  color: #fff
+  background-color: #854fee !important
+  border-color: #854fee !important
+
+.tooltip
+  position: relative
+
+  .tooltiptext
+    visibility: hidden
+    width: 120px
+    background-color: black
+    color: #fff
+    text-align: center
+    padding: 5px 0
+    border-radius: 6px
+
+    /* Position the tooltip text - see examples below!
+    position: absolute
+    z-index: 1
+
+  &:hover .tooltiptext
+    visibility: visible
+
+/* Tooltip text
+
+/* Show the tooltip text when you mouse over the tooltip container
+
+/* start navigation
+
+//Header ================================ 
+.header-area
+  position: relative
+  z-index: 1
+
+  .main-menu
+    .navbar
+      .navbar-brand
+      padding: 1rem 20rem
+
+    .nav-item .nav-link
+      font: normal 500 15px / 2px var(--MyFont)
+      padding: 1.7rem
+      color: var(--title-color)
+
+    .navbar-nav
+      .active a, a:hover
+        background: var(--gradient-color)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+
+
+.main-area
+  .site-banner
+    /* background: linear-gradient(#fbc2eb, #a6c1ee);
+    background: url(../assets/web-development.png) no-repeat fixed
+    background-size: cover
+    height: 90vh
+    display: flex
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-image: linear-gradient(#ed3fff, #378fff)
+      opacity: 0.5
+
+    .site-title
+      h3
+        padding-top: 35%
+        font-weight: 500
+
+        &::after
+          content: " "
+          height: 2px
+          width: 18vw
+          background: black
+          display: inline-block
+          margin-left: 5%
+          transform: translateY(-10px)
+
+      h1
+        font-size: 5rem
+
+      h4
+        font-size: 1.5rem
+
+    .banner-image > img
+      padding: 10rem 0
+      width: 25rem
+
+  .about-area
+    padding: 8rem 5rem
+
+    .about-title
+      h2 > span
+        display: block
+        font: normal bold 49px / 60px var(--MyFont)
+        letter-spacing: 21px
+
+      .paragraph > p
+        padding: 0.4rem 0
+
+  .brand-area
+    padding: 1rem 20rem
+    margin-bottom: 4rem
+
+    .first-row .col-lg-4
+      display: flex
+      justify-content: center
+
+      > .single-brand
+        border: 1px solid var(--border-color)
+        text-align: center
+        margin: 1rem
+        cursor: pointer
+        transition: transform 0.4s ease
+
+        > img
+          width: 100%
+
+        &:hover
+          box-shadow: var(--box-shadow)
+          transform: scale(1.1)
+
+    .experience-area
+      padding: 1rem
+
+      span
+        display: block
+
+      .years-area
+        /* background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+        padding: 2rem 0
+        width: 30rem
+        position: relative
+
+      .bg-panel
+        position: absolute
+        left: -190px
+        top: 0%
+        background: #e029290a
+        width: 400px
+        height: 400px
+        margin-left: 340px
+        z-index: -1
+
+      .years-area
+        .years
+          font: 40px var(--MyFont)
+          color: var(--primary-color2)
+          z-index: 2
+
+        h2 > span
+          font: normal 600 22px / 30px var(--MyFont)
+
+      .call-area
+        padding-left: 10rem
+
+  .services-area
+    padding: 7rem 2rem
+
+    .services-title
+      padding: 0 14rem
+
+      h1
+        font-size: 35px
+
+  > .services-area .services
+    background: rgba(248, 252, 253, 0.973)
+    padding: 2rem 0
+    margin: 5rem 0.5rem
+    transition: box-shadow 0.7s ease
+
+    &:hover
+      box-shadow: var(--box-shadow)
+
+  .project-area
+    padding: 4rem 0
+
+    .button-group button
+      background: transparent
+      border: none
+
+      /* font: normal 500 16px/130px var(--MyFont);
+      text-transform: uppercase
+
+      + button
+        padding-left: 3rem
+
+    .grid .our-project
+      > .title h4
+        font: normal 700 25px / 12px var(--MyFont)
+
+      .img img:hover
+        filter: brightness(1.1) drop-shadow(1px 8px 15px #b1afaf)
+        transition: 0.5s ease
+
+  .about-area
+    .about-title p
+      padding: 1rem 7rem
+
+    .client
+      background: #ffffff10
+      box-shadow: var(--box-shadow)
+      margin: 3rem 0rem
+
+      .client-img
+        padding: 2rem
+
+      .about-client
+        padding-top: 2rem
+
+        h4
+          font: normal 500 21px / 20px var(--MyFont)
+
+        p
+          font-size: 14px
+
+    .owl-carousel
+      .owl-item
+        display: flex
+        justify-content: center
+        padding: 0 1.5rem
+
+      .owl-dots .owl-dot.active span
+        background: var(--primary-color)
+        width: 12px
+        height: 12px
+
+  .subscribe
+    /* background: url(../assets/subscribe-bg.png) no-repeat;
+    background-position-x: center
+
+  .subscribe-us-area .subscribe
+    .subscribe-title
+      h4
+        font: normal 700 30px / 30px var(--MyFont)
+        color: whitesmoke
+
+      p
+        color: whitesmoke
+        padding: 1rem 4rem
+
+    form
+      .input-textbox input
+        width: 400px
+        padding: 1.5rem 1rem
+        border: 1px solid whitesmoke
+        background: transparent
+        color: white
+        font: normal 500 17px / 20px var(--MyFont)
+
+        &::placeholder
+          color: whitesmoke
+
+      .btn-submit button
+        background: whitesmoke
+        color: #000
+        padding: 0.7rem 2rem
+
+/* End Banner Area
+
+/* Start About Area
+
+/* End About Area
+
+/* Start Brand Area
+
+/* End Brand Area
+
+/* Services Area
+
+/* End Services Area
+
+/* Project Area
+
+/* End Project Area
+
+/* About Me
+
+/* End About Me
+
+/* Subscribe me
+
+/* End subscribe me
+
+/* Footer Area
+
+footer.footer-area
+  padding: 3rem 0
+  background: url(../assets/background.jpg) no-repeat
+
+  .social
+    h5
+      font: normal 500 23px / 30px var(--MyFont)
+
+    a
+      > i
+        font-size: 22px
+        padding: 2rem
+        color: var(--border-color)
+
+      &:hover > i
+        color: var(--primary-color)
+
+/* End Footer
+
+.preloader
+  background-color: #222222

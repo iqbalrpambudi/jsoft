@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 
 import Home from "../page/Home"
 import Shop from "../page/Shop"
+import Showcase from "../page/Showcase"
 import About from "../page/About"
 import Footer from "./footer"
 
@@ -13,11 +14,9 @@ class body extends Component {
   render() {
     return (
       <>
-        <main className="site-main">
-          <Route exact path="/" component={Home} />
-          <Route path="/products" component={Shop} />
-          <Route path="/about" component={About} />
-        </main>
+        <Route exact path="/" component={Home} />
+        <Route path="/products" component={Shop} />
+        <Route path="/showcase" component={Showcase} />
         <Footer />
       </>
     )

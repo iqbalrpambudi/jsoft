@@ -8,10 +8,48 @@
 @import url(../style/_global.css);
 
 /* Additional Style */
-#nav1 {
-  background-color: white; /*whichever you want*/
-  opacity: 0.7;
-  filter: (opacity=50);
+#specification {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#specification td, #specification th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#specification tr:nth-child(even){background-color: rgba(145, 145, 145, 0.13);;}
+#specification tr:nth-child(odd){background-color: rgba(255, 255, 255, 0.05);}
+
+#specification tr:hover {background-color: #ddd;}
+
+#specification th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+.reverse{
+  transform: scaleX(-1);
+}
+
+.laptop-container{
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+}
+.laptop-container iframe{
+  box-sizing: border-box;
+    background: url(../assets/wireframe.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    padding: 6% 10.5% 22%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .list-group-item.active {
@@ -45,9 +83,14 @@
   visibility: visible;
 }
 /* start navigation */
+.header_area{
+  position: relative;
+  z-index: 1;
+}
+
 
 .header_area .main-menu .navbar .navbar-brand {
-  padding: 0 2rem 0 5rem;
+  /* padding: 0 2rem 0 5rem; */
 }
 
 .header_area .main-menu .navbar {
@@ -80,10 +123,22 @@
 
 .site-main .site-banner {
   /* background: linear-gradient(#fbc2eb, #a6c1ee); */
-  background: url(../assets/banner.svg) no-repeat fixed;
+  background: url(../assets/web-development.png) no-repeat fixed;
   background-size: cover;
-  height: 60vh;
+  height: 90vh;
   display: flex;
+  position: relative;
+}
+
+.site-main .site-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#ed3fff,#378fff);
+  opacity: 0.5;
 }
 
 .site-main .site-banner .site-title h3 {
@@ -137,8 +192,7 @@
 /* Start Brand Area */
 
 .site-main .brand-area {
-  padding: 1rem 20rem;
-  margin-bottom: 4rem;
+  padding: 5rem 20rem;
 }
 
 .site-main .brand-area .first-row .col-lg-4 {
